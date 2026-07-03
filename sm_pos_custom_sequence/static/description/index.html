@@ -53,6 +53,39 @@
         </div>
     </section>
 
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-10 col-11 text-center">
+                <div style="width:fit-content; margin:0 auto 14px; padding:4px 12px; color:#ffffff; background:#16a34a; border-radius:20px; font-size:12px; font-weight:700;">
+                    How It Works
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-10 col-12 mb-4">
+                <h4 style="color:#0E2D59; font-size:20px; font-weight:600; margin-bottom:8px;">1. Create Your Sequence</h4>
+                <p style="font-size:14px; color:#555;">Settings - Technical - Sequences. Set the prefix, suffix and padding you want, for example POS/ORD- with suffix SM and size 3 gives POS/ORD-001SM.</p>
+                <img src="sequence_form.png" class="img-fluid shadow-sm" style="border-radius:8px; max-width:100%;" alt="ir.sequence form with prefix, suffix and padding"/>
+            </div>
+            <div class="col-lg-10 col-12 mb-4">
+                <h4 style="color:#0E2D59; font-size:20px; font-weight:600; margin-bottom:8px;">2. Enable It On The POS</h4>
+                <p style="font-size:14px; color:#555;">Point of Sale - Configuration - Settings - Bills and Receipts: tick Set Receipt Sequence Number and pick the sequence.</p>
+                <img src="settings.png" class="img-fluid shadow-sm" style="border-radius:8px; max-width:100%;" alt="POS setting to enable the custom receipt sequence"/>
+            </div>
+            <div class="col-lg-10 col-12 mb-4">
+                <h4 style="color:#0E2D59; font-size:20px; font-weight:600; margin-bottom:8px;">3. The Receipt Gets Your Number</h4>
+                <p style="font-size:14px; color:#555;">Every paid order receives the next number from the sequence, generated on the server so it is gap-free even with several cashiers. Printed at the bottom of the receipt: POS/ORD-002SM.</p>
+                <img src="receipt.png" class="img-fluid shadow-sm" style="border-radius:8px; max-width:100%;" alt="POS receipt with the custom sequence number"/>
+            </div>
+            <div class="col-lg-10 col-12 mb-2">
+                <h4 style="color:#0E2D59; font-size:20px; font-weight:600; margin-bottom:8px;">4. Stored On The Order</h4>
+                <p style="font-size:14px; color:#555;">Open the order in the backend: Extra Info tab shows Custom Receipt Number next to the default references, so you can always trace a printed receipt back to its order.</p>
+                <img src="backend_order.png" class="img-fluid shadow-sm" style="border-radius:8px; max-width:100%;" alt="Backend order Extra Info tab with Custom Receipt Number"/>
+            </div>
+        </div>
+    </section>
+
     <section class="row mb-5 p-3 py-5 shadow" style="border-radius:20px; background-color:#0E2D59 !important;">
         <div class="col">
             <div class="row mt-4 mb-5 text-center flex-column justify-content-center">
