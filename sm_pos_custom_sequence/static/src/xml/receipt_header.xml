@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="sm_pos_custom_sequence.ReceiptHeader"
+       t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
+        <xpath expr="//t[@t-out='order.pos_reference']" position="replace">
+            <t t-out="order.sm_receipt_number or order.pos_reference"/>
+        </xpath>
+    </t>
+
+</templates>

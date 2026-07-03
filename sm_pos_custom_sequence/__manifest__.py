@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "POS Custom Receipt Sequence",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Point of Sale",
     "summary": "Number POS receipts with your own ir.sequence: custom prefix, suffix, padding per POS configuration",
     "description": """
@@ -28,7 +28,7 @@ Replace the default POS receipt number with your own sequence.
     ],
     "assets": {
         "point_of_sale._assets_pos": [
-            "sm_pos_custom_sequence/static/src/js/*",
+            "sm_pos_custom_sequence/static/src/xml/*",
         ],
     },
     "installable": True,
