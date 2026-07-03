@@ -21,6 +21,7 @@ Replace the default POS receipt number with your own sequence.
     "author": "Steven Marp",
     "website": "https://apps.odoo.com/apps/modules/browse?author=Steven Marp",
     "license": "OPL-1",
+    "images": ["static/description/banner.gif"],
     "depends": ["point_of_sale"],
     "data": [
         "views/res_config_settings_views.xml",
