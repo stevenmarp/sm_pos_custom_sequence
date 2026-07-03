@@ -1,0 +1,92 @@
+<div class="container" style="font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
+        <div class="row flex-column mb-5 text-center">
+            <h3 style="color:#0E2D59; font-size:28px; font-family:system-ui; font-weight:700;">POS Custom Receipt Sequence</h3>
+            <div class="col-lg-9 col-11 mx-auto mt-3" style="font-size:16px; color:#555;">
+                Replace the default POS receipt number with your own sequence. Pick any ir.sequence
+                per POS configuration - prefix, suffix, padding, date ranges - and the number is printed
+                on the receipt and stored on the order.
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 col-11 text-center">
+                <div style="width:fit-content; margin:0 auto 14px; padding:4px 12px; color:#ffffff; background:#16a34a; border-radius:20px; font-size:12px; font-weight:700;">
+                    Key Features
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-center mb-4 px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Any Sequence Format</h4>
+                    <p style="font-size:14px; color:#555;">Use the full power of Odoo sequences: prefix, suffix, padding, date placeholders. POS/ORD-001SM, 2026-0001, anything.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Gap-Free Numbering</h4>
+                    <p style="font-size:14px; color:#555;">The number is generated on the server when the order is paid. No duplicates and no burned numbers, even with several cashiers.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Receipt And Backend</h4>
+                    <p style="font-size:14px; color:#555;">Printed on the receipt in place of the default reference and stored on the order in the Extra Info tab.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2 px-3">
+            <div class="col-lg-10 col-12">
+                <div class="p-4 bg-white shadow-sm" style="border-radius:8px; border-left:4px solid #16a34a;">
+                    <h4 style="color:#0E2D59; font-size:21px; font-weight:700; margin-bottom:12px;">How To Use</h4>
+                    <ul style="font-size:14px; line-height:1.9; color:#555; margin-bottom:0; padding-left:18px;">
+                        <li>Create a sequence in Settings - Technical - Sequences (or pick an existing one)</li>
+                        <li>Point of Sale - Configuration - Settings - Bills and Receipts: enable Set Receipt Sequence Number and select the sequence</li>
+                        <li>Sell as usual: every paid order gets the next number, printed on the receipt</li>
+                        <li>Find the number on the order under Extra Info - Custom Receipt Number</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row mb-5 p-3 py-5 shadow" style="border-radius:20px; background-color:#0E2D59 !important;">
+        <div class="col">
+            <div class="row mt-4 mb-5 text-center flex-column justify-content-center">
+                <div style="width:fit-content; padding:0 10px; color:white; background-color:#16a34a; border-radius:20px; font-size:12px; margin:0 auto;">
+                    Your Numbers, Your Rules
+                </div>
+                <h2 class="font-weight-bold mb-2" style="font-size:42px; color:#fbaf3d;">
+                    POS/ORD-001SM
+                </h2>
+                <span style="font-size:16px; color:white;">
+                    Receipt numbers that match your paperwork, not Odoo defaults.
+                </span>
+            </div>
+
+            <div class="row no-gutters justify-content-center px-3">
+                <div class="col-md-4 col-12 p-2">
+                    <div class="h-100 p-4 bg-white shadow-sm" style="border-radius:8px;">
+                        <h4 style="color:#0E2D59; font-size:20px; font-weight:700;">Per POS Configuration</h4>
+                        <p style="font-size:14px; line-height:1.7; color:#555; margin-bottom:0;">Each shop or till can run its own sequence, or share one across the company.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-2">
+                    <div class="h-100 p-4 bg-white shadow-sm" style="border-radius:8px;">
+                        <h4 style="color:#0E2D59; font-size:20px; font-weight:700;">Audit Friendly</h4>
+                        <p style="font-size:14px; line-height:1.7; color:#555; margin-bottom:0;">Sequential numbers that accountants and tax auditors can follow without a mapping table.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-2">
+                    <div class="h-100 p-4 bg-white shadow-sm" style="border-radius:8px;">
+                        <h4 style="color:#0E2D59; font-size:20px; font-weight:700;">Zero Workflow Change</h4>
+                        <p style="font-size:14px; line-height:1.7; color:#555; margin-bottom:0;">Cashiers sell exactly as before. The numbering happens automatically on payment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
